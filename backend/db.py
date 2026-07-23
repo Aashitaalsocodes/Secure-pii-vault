@@ -1,6 +1,7 @@
 import sqlite3
+import os
+DB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "pii_vault.db")
 
-DB_PATH = "pii_vault.db"
 
 def get_connection():
     conn = sqlite3.connect(DB_PATH)
